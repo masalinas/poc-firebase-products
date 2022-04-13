@@ -55,7 +55,7 @@ firebase serve
 
 ## Deploy service on Google Cloud Platform
 
-If we obtaine errirs from eslint remove the dot point from package lint scripts
+If we obtaine errors from eslint remove the dot point from package lint scripts
 ```sh
 firebase deploy
 ```
