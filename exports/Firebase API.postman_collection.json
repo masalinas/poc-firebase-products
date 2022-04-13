@@ -12,7 +12,7 @@
 				"header": [],
 				"body": {
 					"mode": "raw",
-					"raw": "{\n    \"id\": 2,\n    \"code\": \"002\",\n    \"description\": \"Orange\",\n    \"price\": 8.5,\n    \"active\": false\n}",
+					"raw": "{\n    \"id\": 3,\n    \"code\": \"003\",\n    \"description\": \"Banana\",\n    \"price\": 9.2,\n    \"active\": true\n}",
 					"options": {
 						"raw": {
 							"language": "json"
@@ -38,6 +38,37 @@
 			"response": []
 		},
 		{
+			"name": "saveProduct [REMOTE]",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 3,\n    \"code\": \"003\",\n    \"description\": \"Banana\",\n    \"price\": 9.2,\n    \"active\": true\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/app/api/products",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"app",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "findAllProducts",
 			"request": {
 				"method": "GET",
@@ -52,6 +83,28 @@
 					"path": [
 						"product-3a5fb",
 						"us-central1",
+						"app",
+						"api",
+						"products"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "findAllProducts [REMOTE]",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/app/api/products",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
 						"app",
 						"api",
 						"products"
@@ -94,6 +147,38 @@
 			"response": []
 		},
 		{
+			"name": "updateProduct [REMOTE]",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"id\": 2,\n    \"code\": \"002\",\n    \"description\": \"Orange\",\n    \"price\": 9,\n    \"active\": false\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/app/api/products/2",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
+						"app",
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
 			"name": "deleteProduct",
 			"request": {
 				"method": "DELETE",
@@ -108,6 +193,29 @@
 					"path": [
 						"product-3a5fb",
 						"us-central1",
+						"app",
+						"api",
+						"products",
+						"2"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "deleteProduct [REMOTE]",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "https://us-central1-product-3a5fb.cloudfunctions.net/app/api/products/2",
+					"protocol": "https",
+					"host": [
+						"us-central1-product-3a5fb",
+						"cloudfunctions",
+						"net"
+					],
+					"path": [
 						"app",
 						"api",
 						"products",
