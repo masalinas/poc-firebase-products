@@ -48,6 +48,7 @@ firebase login
 ## Debug local service
 
 We could debug our local service before deploy in Google Cloud Platform
+
 ```sh
 firebase serve
 ```
