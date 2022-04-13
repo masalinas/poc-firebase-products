@@ -37,13 +37,22 @@ Firestore from Google Clooud Platform
 ![GCP Firestore Database](captures/gcp_firestore_database.png "GCP Firestore 
 Database")
 
-## Degub
+## Login
 
+We must to login in Google Cloud Platform at first
+
+```sh
+firebase login
+```
+
+## Debug local service
+
+We could debug our local service before deploy in Google Cloud Platform
 ```sh
 firebase serve
 ```
 
-## Deploy
+## Deploy service on Google Cloud Platform
 
 If we obtaine errirs from eslint remove the dot point from package lint scripts
 ```sh
