@@ -23,7 +23,7 @@ STEP 03:
 
 ## Configure Firebase Project
 
-Now we create a Firestore Database a NoSQL database from Google
+Now we create a Firestore Database a NoSQL database from Firebase Console
 
 ![Firebase Firestore Database](captures/firebase_firestore_creation.png "Firebase Firestore Database")
 
