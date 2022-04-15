@@ -111,8 +111,8 @@ app.delete("/api/products/:id", async (req, res) => {
   try {
       const doc = db.collection("products").doc(req.params.id);
       
-    await doc.delete();
-    return res.status(200).json(output("200", "Product deleted successfully"));
+      await doc.delete();
+      return res.status(200).json(output("200", "Product deleted successfully"));
   } catch (error) {
     return res.status(500).send(output("500", error));
   }
